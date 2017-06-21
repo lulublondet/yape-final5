@@ -15,17 +15,7 @@
     "levelup": "^1.3.8",
     "morgan": "^1.8.2",
     "morgan-json": "^1.1.0",
-    "random-number": "0.0.7"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Laboratoria/yape.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Laboratoria/yape/issues"
-  },
-  "homepage": "https://github.com/Laboratoria/yape#readme"
+    "random-number": "0.0.7",
+    "server": "^1.0.0-beta.1"
+  }
 }

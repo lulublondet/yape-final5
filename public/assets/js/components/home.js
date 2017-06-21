@@ -1,12 +1,13 @@
-'use strict';
-const Inicio = () => {
-	
+"use strict";
+
+const Home = () => {
+  
   const header = $('<header></header>');
   const container = $('<div class="container"></div>');
   const row = $('<div class="row"></div>')
   const col = $('<div class="col-xs-12"></div>')
   const divSlider  = $('<div class="slider"></div>');
-  const	imgSlider = $('<img src="img/icons/icon-people.png" alt="" id="">');
+  const imgSlider = $('<img src="assets/img/icons/icon-people.png" alt="" id="">');
   const tituloSlider = $('<h1>Paga a tus amigos</h1>');
   const parrafoSlider = $('<p>Paga a quien quieras desde donde quieras, sin usar efectivo</p>');
   const btnSlider = $('<div class="controles"></div>')
@@ -26,7 +27,7 @@ console.log(arrImagenes);
 
 for(var i in arrImagenes){
 
-	btnSlider.append('<button class="control">hola</button>');
+  btnSlider.append('<button class="control">hola</button>');
 }
 
 var arrBtn = btnSlider.children(); 
@@ -34,24 +35,23 @@ var arrBtn = btnSlider.children();
 console.log(arrBtn);
 
 jQuery.each(arrImagenes,function(i,val){
-	arrBtn.eq(i).attr("id", val.url);
-	arrBtn.eq(i).on('click',function(){
-		imgSlider.attr('src',$(this).attr("id"));	
-		tituloSlider.text(val.titulo);
-		parrafoSlider.text(val.msg);
-		
-	})
+  arrBtn.eq(i).attr("id", val.url);
+  arrBtn.eq(i).on('click',function(){
+    imgSlider.attr('src',$(this).attr("id")); 
+    tituloSlider.text(val.titulo);
+    parrafoSlider.text(val.msg);
+    
+  })
 })
 
 
 loginButton.on("click",function(){
-	state.register = true;
-	state.doRender();
+  state.window = 1;
+  state.doRender();
 })
 
 
-	return header;
+  return header;
 }
-
 
 
