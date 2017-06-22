@@ -20,6 +20,22 @@ const render = (root) => {
             wrapper.append(CreateUser());
 
       break;
+       case 4:
+            wrapper.append(App());
+
+      break;
+      case 5:
+            wrapper.append(RegisterCard());
+
+      break;
+       case 6:
+            wrapper.append(CardCode());
+
+      break;
+      case 7:
+            wrapper.append(Hello());
+
+      break;
 }
 
 
@@ -32,7 +48,13 @@ const state = {
   window:null,
   id:null,
   checked:false,
-  code:null
+  code:null,
+  name:null,
+  email:null,
+  pass:null,
+  cardNumber:null,
+  cardMonth:null,
+  cardYear:null
  
 }
 
